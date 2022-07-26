@@ -49,16 +49,19 @@ jobs:
   #         package: ${{ env.DOTNET_ROOT }}/webapp
   #         publish-profile: ${{ secrets.WebAppPublishProfile }}
 
-  benchmark:
+  test:
     strategy:
       matrix:
-        # os: [ubuntu-latest, macos-latest, windows-latest]
-        url: [https://www.mezcladigital.com/, https://www.mezcladigital.com/educacion, https://mezcladigital.com/programas/]
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        node: [6, 7, 8]
       # runs-on: ubuntu-latest
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
     # needs: [build, deploy]
     steps:
-      - uses: actions/checkout@v1
-      - uses: ./ab-action
+      - name: Print messages
+        run: |
+          echo Welcome to Matrix Neo
+      # - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
         with:
-          URL: ${{ matrix.url }}
+          node-version: ${{ matrix.node }}
