@@ -1,4 +1,4 @@
-name: Demo 3 - Custom Action
+name: Demo 2 - Custom Action
 
 on:
   push:
@@ -53,7 +53,7 @@ jobs:
     strategy:
       matrix:
         # os: [ubuntu-latest, macos-latest, windows-latest]
-        url: [https://www.mezcladigital.com/, https://www.mezcladigital.com/educacion, https://mezcladigital.com/programas/]
+        url: ["https://www.mezcladigital.com/", "https://www.mezcladigital.com/educacion", "https://mezcladigital.com/programas/"]
       # runs-on: ubuntu-latest
     runs-on: ubuntu-latest
     # needs: [build, deploy]
