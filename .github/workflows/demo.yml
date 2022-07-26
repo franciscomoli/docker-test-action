@@ -56,4 +56,4 @@ jobs:
       - uses: actions/checkout@v1
       - uses: ./ab-action
         with:
-          URL: "https://mezcladigital.com"
+          URL: "https://www.mezcladigital.com/"
