@@ -9,11 +9,11 @@ inputs:
   Concurrency:
     description: "Número de usuarios concurrentes para tu test"
     required: false
-    default: '50'
+    default: '5'
   NumberOfRequests:
     description: "Número de peticiones que quieres que se lancen"
     required: false
-    default: '1000'
+    default: '10'
 
 runs:
   using: "docker"
