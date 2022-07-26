@@ -50,10 +50,11 @@ jobs:
   #         publish-profile: ${{ secrets.WebAppPublishProfile }}
 
   benchmark:
-    matrix:
-      os: [ubuntu-latest, macos-latest, windows-latest]
-      url: [https://www.mezcladigital.com/,https://www.mezcladigital.com/educacion, https://mezcladigital.com/programas/]
-    # runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        url: [https://www.mezcladigital.com/,https://www.mezcladigital.com/educacion, https://mezcladigital.com/programas/]
+      # runs-on: ubuntu-latest
     runs-on: ${{matrix.os}}
     # needs: [build, deploy]
     steps:
