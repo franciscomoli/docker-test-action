@@ -2,13 +2,13 @@ name: Workflow Benchamark
 
 on: 
   push:
-    branches: [main]
+    branches: [master]
 
 jobs:
 
   benchmark:
     runs-on: ubuntu-latest
-    needs: [build,deploy]
+    # needs: [build,deploy]
     steps:
       - uses: actions/checkout@v1
       - uses: ./ab-action
