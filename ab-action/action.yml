@@ -1,25 +1,23 @@
 name: Apache Benchmark Action
-description: test concurrencia aplicación
-autho: Francisco Molina
+description: Pon a prueba tu aplicación
+author: Francisco Molina
 
 inputs:
   URL:
-    description: "url_a_probar"
+    description: "La URL que quieres probar"
     required: true
-    #$INPUT_URL
   Concurrency:
-    description: "usuarios concurrentes"
+    description: "Número de usuarios concurrentes para tu test"
     required: false
-    default: '5'
-    # $INPUT_CONCURRENCY
+    default: '50'
   NumberOfRequests:
-    description: "numero de peticiones"
+    description: "Número de peticiones que quieres que se lancen"
     required: false
-    default: '10'
+    default: '1000'
 
 runs:
   using: "docker"
-  images: "Dockerfile"
+  image: "Dockerfile"
 
 branding:
   icon: "activity"
