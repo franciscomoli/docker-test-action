@@ -14,7 +14,7 @@ jobs:
     steps:
       - run: echo Hello workflow Reusable
         shell: bash
-      # - uses: reusable-action@master
+      - uses: franciscomoli/docker-test-action/reusable-action/action.yml@master
 
 # jobs:
 #   test5:
