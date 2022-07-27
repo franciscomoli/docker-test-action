@@ -1,7 +1,7 @@
 name: Gitleaks Secret Detections
 
 runs: 
-  using: "ubuntu-latest"
+  using: "composite"
   steps:
-    - run: echo Hello node
+    - run: echo Hello actions
       shell: bash
