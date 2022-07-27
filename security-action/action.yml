@@ -1,5 +1,7 @@
 name: Gitleaks Secret Detections
 
-
 runs: 
   using: "node16"
+  steps:
+    - run: echo Hello node
+      shell: bash
