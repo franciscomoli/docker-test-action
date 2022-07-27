@@ -1,0 +1,7 @@
+name: Reusable Actions
+
+runs: 
+  using: "composite"  # https://docs.github.com/es/actions/creating-actions/about-custom-actions
+  steps:
+    - run: echo Hello actions Reusable
+      shell: bash
