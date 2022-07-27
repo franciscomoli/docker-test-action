@@ -8,5 +8,5 @@ inputs:
 runs: 
   using: "composite"  # https://docs.github.com/es/actions/creating-actions/about-custom-actions
   steps:
-    - run: echo Hello actions  parameter $INPUT_URL
+    - run: echo Hello actions  parameter ${{ matrix.url }}
       shell: bash

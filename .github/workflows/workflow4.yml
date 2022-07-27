@@ -1,4 +1,4 @@
-name: Demo 4 - Custom Action
+name: Demo 4 - Custom Workflow
 
 on:
   push:
