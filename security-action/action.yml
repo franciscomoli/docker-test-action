@@ -4,8 +4,11 @@ name: Gitleaks Secret Detections
 jobs:
 
   gitleaks:
-    # runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
      # needs: [build, deploy]
+    # runs:
+    #   using: "docker"
+    #   image: "Dockerfile"
     steps:
       - name: Print messages wth actions
         run: |
