@@ -1,0 +1,12 @@
+name: Gitleaks Secret Detections
+
+
+jobs:
+
+  gitleaks:
+    runs-on: ubuntu-latest
+     # needs: [build, deploy]
+    steps:
+      - name: Print messages wth actions
+        run: |
+          echo Welcome to Matrix Neo
