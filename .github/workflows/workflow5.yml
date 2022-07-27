@@ -1,15 +1,11 @@
 name: Demo 5 - Custom Workflow
 
-
 on:
-  push:
-    branches: [master]
-# on:
-#   workflow_call:
-#     inputs:
-#       username:
-#         required: false
-#         type: string
+  workflow_call:
+    inputs:
+      username:
+        required: false
+        type: string
 
 
 jobs:
@@ -19,5 +15,5 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: ./reusable-action
-        # with:
-        #   URL: "https://www.google.cl"
+        with:
+          URL: "https://www.google.cl"
