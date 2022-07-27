@@ -7,11 +7,14 @@ on:
         required: false
         type: string
 
-runs: 
-  using: "composite"  # https://docs.github.com/es/actions/creating-actions/about-custom-actions
-  steps:
-    - run: echo Hello workflow Reusable
-      shell: bash
+jobs:
+  reusable_workflow_job:
+    runs-on: ubuntu-latest
+    # environment: production
+    steps:
+      - run: echo Hello actions Reusable
+        shell: bash
+
 # jobs:
 #   test5:
 #     runs-on: ubuntu-latest
