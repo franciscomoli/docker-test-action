@@ -1,15 +1,5 @@
 name: Gitleaks Secret Detections
 
 
-jobs:
-
-  gitleaks:
-    runs-on: ubuntu-latest
-     # needs: [build, deploy]
-    # runs:
-    #   using: "docker"
-    #   image: "Dockerfile"
-    steps:
-      - name: Print messages wth actions
-        run: |
-          echo Welcome to Matrix Neo
+runs: 
+  using: "node16"
