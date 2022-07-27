@@ -1,7 +1,12 @@
 name: Gitleaks Secret Detections
 
+inputs:
+  URL:
+    description: URL parameter
+    required: true
+
 runs: 
-  using: "composite"
+  using: "composite"  # https://docs.github.com/es/actions/creating-actions/about-custom-actions
   steps:
-    - run: echo Hello actions
+    - run: echo Hello actions  parameter $INPUT_URL
       shell: bash
