@@ -15,5 +15,5 @@ jobs:
       # - run: echo Hello workflow Reusable
       #   shell: bash
       - uses: actions/checkout@v1
-      - uses: /reusable-action/action
+      - uses: reusable-action/action
 
