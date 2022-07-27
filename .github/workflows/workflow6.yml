@@ -12,8 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     # environment: production
     steps:
-      - run: echo Hello actions Reusable
+      - run: echo Hello workflow Reusable
         shell: bash
+      - uses: ./reusable-action
 
 # jobs:
 #   test5:
