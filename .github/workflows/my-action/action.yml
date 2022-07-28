@@ -1,0 +1,12 @@
+name: Reusable Actions
+
+inputs:
+  URL:
+    description: URL parameter
+    required: false
+
+runs: 
+  using: "composite"  # https://docs.github.com/es/actions/creating-actions/about-custom-actions
+  steps:
+    - run: echo Hello actions reusable
+      shell: bash
