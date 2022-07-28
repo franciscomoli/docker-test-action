@@ -12,8 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     # environment: production
     steps:
-       - run: echo Hello workflow Reusable
-         shell: bash
+      - uses: actions/checkout@v1
+      - uses: ./reusable-action
+      #  - run: echo Hello workflow Reusable
+      #    shell: bash
       # - uses: actions/checkout@v1
       # - uses: /.github/workflows
 
