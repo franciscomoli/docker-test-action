@@ -6,7 +6,8 @@ inputs:
     required: false
 
 runs: 
-  using: "composite"  # https://docs.github.com/es/actions/creating-actions/about-custom-actions
-  steps:
-    - run: echo Hello actions reusable
-      shell: bash
+  using: node12  # https://docs.github.com/es/actions/creating-actions/about-custom-actions
+  main: index.js
+
+    # - run: echo Hello actions reusable
+    #   shell: bash
