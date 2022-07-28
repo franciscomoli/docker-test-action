@@ -13,7 +13,8 @@ jobs:
     # needs: [build, deploy]
     steps:
       - uses: actions/checkout@v2.3.4
-      - uses: ./.github/actions/reusable-action
+      - name: action local
+        uses: ./.github/actions/reusable-action
       # - name: Run Gitleaks
       #   uses: eeveebank/github-actions-gitleaks@v1.0.0
       #   with:
