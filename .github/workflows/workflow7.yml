@@ -23,5 +23,5 @@ jobs:
       - name: Print messages
         run: |
           echo Welcome to Node 
-      - name: Install dependencies
-        run: npm install
+      - name: Npm version
+        run: npm --version

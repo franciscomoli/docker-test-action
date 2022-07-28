@@ -1,8 +1,0 @@
-name: Reusable Actions
-
-runs: 
-  using: "composite"  # https://docs.github.com/es/actions/creating-actions/about-custom-actions
-  steps:
-    - uses: actions/checkout@v1
-    - run: echo Hello actions Reusable
-      shell: bash
