@@ -13,7 +13,7 @@ jobs:
     # needs: [build, deploy]
     steps:
       - uses: actions/checkout@v1
-      - uses:  ./.github/workflows/actions/action.yml
+      - uses:  workflows/actions/action.yml
         with:
           URL: "https://www.google.cl"
 
