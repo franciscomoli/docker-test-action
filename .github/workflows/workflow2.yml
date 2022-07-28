@@ -2,7 +2,7 @@ name: Demo 2 - Custom Workflow Matrix
 
 on:
   push:
-    branches: [master]
+    branches: [disable]
 
 
 jobs:

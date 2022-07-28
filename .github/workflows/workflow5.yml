@@ -1,11 +1,8 @@
-name: Demo 5 - Custom Workflow Reusable Llamado
+name: Demo 5 - Custom Workflow Reusable Local 
 
 on:
-  workflow_call:
-    inputs:
-      username:
-        required: false
-        type: string
+  push:
+    branches: [master]
 
 
 jobs:
