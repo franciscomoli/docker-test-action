@@ -8,6 +8,5 @@ inputs:
 runs: 
   using: "composite"  # https://docs.github.com/es/actions/creating-actions/about-custom-actions
   steps:
-    - uses: actions/checkout@v3
     - run: echo Hello actions reusable
       shell: bash
