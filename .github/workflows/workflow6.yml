@@ -1,7 +1,6 @@
 name: Demo 6 - Custom Workflow reusable action llamado desde fuera del repo
 
-on:
-  workflow_dispatch:
+on: [workflow_call]
   # workflow_call:
     # inputs:
     #   URL:
