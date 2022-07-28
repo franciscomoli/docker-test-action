@@ -13,7 +13,6 @@ jobs:
     # needs: [build, deploy]
     steps:
       - uses: actions/checkout@v3
-      - uses:  github/actions/reusable-action
-      #   with:
-      #     URL: "https://www.google.cl"
-
+      - uses: ./ab-action
+        with:
+          URL: "https://www.mezcladigital.com/"
