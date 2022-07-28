@@ -1,8 +1,8 @@
-name: Demo 4 - Custom Workflow
+name: Demo 4 - Custom Workflow Security call Actions
 
 on:
   push:
-    branches: [disable]
+    branches: [master]
 
 
 jobs:

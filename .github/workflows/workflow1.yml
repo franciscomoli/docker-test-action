@@ -1,8 +1,8 @@
-name: Demo 1 - Custom Workflow
+name: Demo 1 - Custom Workflow with local actions 
 
 on:
   push:
-    branches: [disable]
+    branches: [master]
 
 
 jobs:
@@ -52,7 +52,7 @@ jobs:
   benchmark:
     runs-on: ubuntu-latest
     # runs-on: [self-hosted, linux] # self hosted in kubernetes
-    # needs: [build, deploy]
+    # needs: [build, deploy]  # jobs dependientes 
     steps:
       - uses: actions/checkout@v1
       - uses: ./ab-action
