@@ -2,20 +2,18 @@ name: Demo 6 - Custom Workflow reusable action llamado desde fuera del repo
 
 on:
   workflow_call:
-    inputs:
-      username:
-        required: false
-        type: string
+    # inputs:
+    #   URL:
+    #     required: false
+    #     type: string
 
 jobs:
-  reusable_workflow_job:
+  eusable_workflow_job:
     runs-on: ubuntu-latest
-    # environment: production
+    # needs: [build, deploy]
     steps:
       - uses: actions/checkout@v1
-      - uses: reusable-action
-      #  - run: echo Hello workflow Reusable
-      #    shell: bash
-      # - uses: actions/checkout@v1
-      # - uses: /.github/workflows
+      - uses: ./reusable-action
+        with:
+          URL: "https://www.google.cl"
 

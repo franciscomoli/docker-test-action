@@ -2,7 +2,7 @@ name: Demo 7 - Custom Workflow container node
 
 on:
   push:
-    branches: [master]
+    branches: [disable]
 
 
 jobs:

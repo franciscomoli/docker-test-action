@@ -2,7 +2,7 @@ name: Demo 5 - Custom Workflow Reusable Local
 
 on:
   push:
-    branches: [master]
+    branches: [disable]
 
 
 jobs:
