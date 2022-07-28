@@ -1,5 +1,7 @@
 #!/bin/sh -l
 
+#debe ser $INPUT_ 
+
 sh -c "echo Entry point..."
 sh -c "echo URL: $INPUT_URL"
 sh -c "echo Concurrency: $INPUT_CONCURRENCY"

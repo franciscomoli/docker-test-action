@@ -1,8 +1,8 @@
-name: Demo 1 - Custom Workflow
+name: Demo 7 - Custom Workflow container node
 
 on:
   push:
-    branches: [disable]
+    branches: [master]
 
 
 jobs:
@@ -49,12 +49,19 @@ jobs:
   #         package: ${{ env.DOTNET_ROOT }}/webapp
   #         publish-profile: ${{ secrets.WebAppPublishProfile }}
 
-  benchmark:
+  node_install:
     runs-on: ubuntu-latest
-    # runs-on: [self-hosted, linux] # self hosted in kubernetes
-    # needs: [build, deploy]
+    container:
+          image: node:14.16
+          env:
+            NODE_ENV: development
+          ports:
+            - 80
+          volumes:
+            - my_docker_volume:/volume_mount
+          options: --cpus 1
     steps:
       - uses: actions/checkout@v1
-      - uses: ./ab-action
-        with:
-          URL: "https://www.mezcladigital.com/"
+      - name: Print messages
+        run: |
+          echo Welcome to Node

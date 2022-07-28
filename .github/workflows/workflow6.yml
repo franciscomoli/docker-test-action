@@ -1,4 +1,4 @@
-name: Demo 6 - Custom Workflow
+name: Demo 6 - Custom Workflow reusable actions
 
 on:
   workflow_call:
@@ -13,7 +13,7 @@ jobs:
     # environment: production
     steps:
       - uses: actions/checkout@v1
-      - uses: ./reusable-action
+      - uses: reusable-action
       #  - run: echo Hello workflow Reusable
       #    shell: bash
       # - uses: actions/checkout@v1
