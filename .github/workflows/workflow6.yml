@@ -15,7 +15,7 @@ jobs:
     steps:
       # - uses: actions/checkout@v2.3.4
       - name: action local
-        uses: franciscomoli/docker-test-action/.github/actions/reusable-action/action@master
+        uses: franciscomoli/docker-test-action/.github/actions/reusable-action/action.yml@master
         # uses: ./.github/actions/reusable-action
 
       # - name: Run Gitleaks
