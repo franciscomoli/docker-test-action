@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2.3.4
       - name: action local
-        uses: ./.github/actions/reusable-action
+        uses: ./.github/actions/reusable-action/action.yml@master
       # - name: Run Gitleaks
       #   uses: eeveebank/github-actions-gitleaks@v1.0.0
       #   with:
